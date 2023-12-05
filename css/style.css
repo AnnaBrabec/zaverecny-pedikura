@@ -1,15 +1,61 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
+
+/*BARVY:
+#ADFAAF: zelené pozadí článků
+#527979: button
+*/
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 150px 50px 400px 50px;
+}
 .menu {
     list-style-type: none;
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    background-color: #ADFAAF;
+    justify-content: space-between;
 }
 .menu__link {
     text-decoration: none;
 }
 .logo {
-    height: 280px;
+    display: flex;
 }
 .logo__picture {
-    height:  100px;
-    width: 100px;
+    grid-column-start: 1;
+    border-radius: 50%;
+    border: 2px solid  black;
+}
+.logo__text {
+    grid-column-start: 2;
+    grid-row: 1/2;
+}
+.logo__text--title {
+    grid-column-start: 2;
+}
+.logo__text--subtitle {
+    grid-column-start: 2;
+}
+.main__article {
+    grid-row: 3/5;
+}
+.main__article--green {
+    background-color: #ADFAAF;
+    grid-column: 1/-1;
+}
+.main__article--white {
+    background-color: white;
+}
+.main__article--button {
+    background-color: #527979;
+}
+.site-footer {
+    display: flex;
+    grid-row: 5/6;
+    grid-column: 1/-1;
+    background-color: black;
+    color: white;
 }
