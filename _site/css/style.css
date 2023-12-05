@@ -1,2 +1,15 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
+.menu {
+    list-style-type: none;
+}
+.menu__link {
+    text-decoration: none;
+}
+.logo {
+    height: 280px;
+}
+.logo__picture {
+    height:  100px;
+    width: 100px;
+}
