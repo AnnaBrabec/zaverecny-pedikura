@@ -21,9 +21,8 @@ body {
     list-style-type: none;
     display: flex;
     grid-row: 2/3;
-    grid-column: 1/-1;
     background-color: #ADFAAF;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .menu__link {
     text-decoration: none;
@@ -41,7 +40,7 @@ body {
     padding: 15px;
 }
 .logo__text--title {
-    grid-column-start: 2;
+    grid-column: 2;
     font-size: 25px;
 }
 .logo__text--subtitle {
