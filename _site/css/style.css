@@ -11,6 +11,8 @@ body {
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: repeat(6, auto);
     background-color: #E6FDE7;
+    max-width: 100%;
+    margin: auto;
 }
 .site-header {
     grid-column: 1/-1;
@@ -18,8 +20,7 @@ body {
 }
 .logo {
     display: flex;
-    width: 50%;
-    margin: auto;
+    text-align: center;
 }
 .logo__img {
     height: 150px;
@@ -41,7 +42,6 @@ body {
     grid-column: 1/-1;
     grid-row: 2/3;
     padding: 0px 20px;
-    width: 100%;
 }
 .left-sidebar {
     grid-column: 1/-1;
