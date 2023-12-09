@@ -40,18 +40,13 @@ body {
 }
 .main-content {
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 3/4;
     padding: 0px 20px;
 }
 .left-sidebar {
     grid-column: 1/-1;
-    grid-row: 3/4;
+    grid-row: 2/3;
     background-color: #ADFAAF;
-}
-.nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 }
 .nav__item {
     list-style-type: none;
