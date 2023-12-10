@@ -48,6 +48,22 @@ body {
     grid-row: 2/3;
     background-color: #ADFAAF;
 }
+.dropdown__checkbox {
+    display: none;
+}
+.dropdown {
+    text-align: center;
+}
+.dropdown label {
+    display: block;
+}
+.nav {
+    display: none;
+}
+.dropdown__checkbox:checked ~ .nav {
+    display: block;
+    padding: 0;
+}
 .nav__item {
     list-style-type: none;
     margin: 0;
