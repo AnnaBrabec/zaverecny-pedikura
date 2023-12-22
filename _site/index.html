@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pedikúra Lenka Ježková</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -17,7 +20,7 @@
         </div>
     </header>
     <main class="main-content">
-        <p>
+        <p class="main-content__normal">
             Potřebují vaše nohy ošetření?
         <br>
             Nemůžete ze zdravotních důvodů docházet na pedikúru?
@@ -30,7 +33,7 @@
         <br>
             Nevadí, pedikérka může přijet k vám domů!
         </p>    
-        <p>
+        <p class="main-content__highlited">
             Nabízím pedikérské služby v pohodlí vašeho domova.
         <br>
             Jezdím i do nemocnic, domovů důchodců,
@@ -38,11 +41,11 @@
         <br>
             Není problém ošetřit ležícího klienta.
         </p>
-        <p>
+        <p class="main-content__normal">
             Diabetici (pacienti s cukrovkou) mohou
             čerpat příspěvek na ošetření nohou u své zdravotní pojišťovny.
         <br>
-            <a href="/vice-informaci.html/">Více informací</a>
+            <a href="/vice-informaci.html/" class="link-text">Více informací</a>    
         </p>
     </main>
     <section class="left-sidebar">
@@ -69,12 +72,21 @@
                 Hranice, Přerov, Potštát,
                 Odry, Fulnek, Vítkov a okolí
             </p>
-            <img src="/images/facebook.png" class="contact-info__facebook" alt="facebook">
+            <p>Přijímám platby kartou.
+            </p>
+            <img src="/images/karty.jpg" alt="platební karty" class="contact-info__cards">
         </div>
     </aside>
     <footer class="site-footer">
-        <p>Lenka Ježková Partutovice 98 75301 Hranice</p>
-        <p>IČO: 681803114</p>
+        <p class="site-footer__left">
+        Lenka Ježková
+        <br>
+        Partutovice 98
+        <br>
+        75301 Hranice</p>
+        <p class="site-footer__right">IČO: 681803114
+        <img src="/images/facebook.png" class="site-footer__right--facebook" alt="facebook">
+        </p>
     </footer>
 </body>
 </html>

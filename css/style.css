@@ -13,6 +13,8 @@ body {
     background-color: #E6FDE7;
     max-width: 100%;
     margin: auto;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-size: 1.3rem;
 }
 .site-header {
     grid-column: 1/-1;
@@ -25,28 +27,48 @@ body {
 .logo__img {
     height: 150px;
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px;
 }
 .logo__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
 }
 .logo__text--title {
     margin: 0;
+    font-size: 2rem;
 }
 .logo__text--subtitle {
     margin: 0;
+    font-size: 1.5rem;
 }
 .main-content {
     grid-column: 1/-1;
     grid-row: 3/4;
     padding: 0px 20px;
 }
+.main-content__normal {
+    background-color: white;
+    padding: 10px;
+}
+.link-text {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+.main-content__highlited {
+    background-color:#ADFAAF;
+    padding: 10px;
+    font-weight: 500;
+}
 .left-sidebar {
     grid-column: 1/-1;
     grid-row: 2/3;
     background-color: #ADFAAF;
+    font-size: 1.5rem;
 }
 .dropdown__checkbox {
     display: none;
@@ -56,6 +78,7 @@ body {
 }
 .dropdown label {
     display: block;
+    padding: 5px;
 }
 .nav {
     display: none;
@@ -63,11 +86,12 @@ body {
 .dropdown__checkbox:checked ~ .nav {
     display: block;
     padding: 0;
+    margin: 0;
 }
 .nav__item {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px;
 }
 .nav__item--link {
     text-decoration: none;
@@ -82,14 +106,54 @@ body {
     background-color: #527979;
     width: 200px;
     margin: auto;
+    text-align: center;
+    border-radius: 20px;
 }
 .contact-info {
     text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
-.contact-info__facebook {
-    height: 50px;
+.contact-info__cards {
+    margin: auto;
+    width: 100px;
 }
 .site-footer {
     grid-column: 1/-1;
     grid-row: 5/6;
+    display: flex;
+    background-color: #ADFAAF;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.site-footer__right {
+    display: flex;
+    flex-direction: column;
+}
+.site-footer__right--facebook {
+    width: 50px;
+    margin: auto;
+}
+@media screen and (min-width: 900px) {
+    .left-sidebar {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .dropdown label {
+        display: none;
+    }
+    .nav {
+        display: block;
+    }
+    .main-content {
+        grid-column: 2/-2;
+        grid-row: 2/3;
+        padding: 0;
+        background-color: white;
+    }
+    .right-sidebar {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
 }
