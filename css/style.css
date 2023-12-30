@@ -171,6 +171,9 @@ body {
         grid-column: 1/2;
         grid-row: 1/2;
     }
+    .logo {
+        text-align: center;
+    }
     .logo__text {
         grid-column: 2/3;
         grid-row: 1/2;
@@ -187,6 +190,7 @@ body {
     }
     .nav {
         display: block;
+        padding-top: 50px;
     }
     .nav__item--link {
         color: black;
@@ -209,6 +213,8 @@ body {
     }
     .main-content__normal {
         margin: 0;
+        background-color: #E6FDE7;
+
     }
     .main-content__normal--picture {
         display: block;
@@ -218,6 +224,7 @@ body {
     .main-content__flexbox {
         display: flex;
         padding-bottom: 20px;
+        background-color: #E6FDE7;
     }
     .right-sidebar {
         grid-column: 6/7;
@@ -228,6 +235,7 @@ body {
     }
     .site-footer {
         grid-column: 1/-2;
+        border-radius: 0 5px  0 0;
     }
     .site-footer__content {
         flex-direction: row;
