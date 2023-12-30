@@ -52,6 +52,9 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
+.main-content__flexbox {
+    display: block;
+}
 .link-text {
     text-decoration: none;
     color: black;
@@ -66,6 +69,9 @@ body {
     margin: 0;
 }
 .main-content__highlighted--picture {
+    display: none;
+}
+.main-content__normal--picture {
     display: none;
 }
 .left-sidebar {
@@ -191,6 +197,18 @@ body {
         max-width: 300px;
         border-radius: 5px;
         padding-right: 20px;
+    }
+    .main-content__normal {
+        margin: 0;
+    }
+    .main-content__normal--picture {
+        display: block;
+        max-width: 300px;
+        border-radius: 5px;
+    }
+    .main-content__flexbox {
+        display: flex;
+        padding-bottom: 20px;
     }
     .right-sidebar {
         grid-column: 5/7;
