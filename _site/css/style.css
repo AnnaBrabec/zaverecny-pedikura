@@ -13,11 +13,11 @@ body {
     grid-template-rows: repeat(6, auto);
     gap: 10px;
     background-color: #E6FDE7;
-    max-width: 100%;
+    width: 100%;
     margin: auto;
     font-family: 'Mukta Mahee', sans-serif;
     font-size: 1.3rem;
-    row-gap: 10px;
+    row-gap: 1%;
 }
 .site-header {
     grid-column: 2/-2;
@@ -25,14 +25,19 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(to top,#ADFAAF, #527979 );
+    border-radius: 0 0 100px 100px;
+    padding-bottom: 15px;
 }
 .logo {
-    text-align: center;
+    margin: auto;
+    padding-top: 15px;
+    width: 50%;
 }
 .logo__img {
-    height: 150px;
+    height: auto;
+    width: 100%;
     border-radius: 50%;
-    padding: 15px 0;
 }
 .logo__text {
     text-align: center;
@@ -60,11 +65,21 @@ body {
     display: block;
     flex-wrap: wrap;
 }
-.link-text {
+.main-content__flexbox--certificates {
+    display: flex;
+    margin-top: 10px;
+}
+.main-content__normal--certificate {
+    width: 25%;
+}
+.button__link {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-weight: 500;
+    background-color: #ADFAAF;
+    padding: 0 10px;
+    border-radius: 15px;
 }
 .main-content__highlited {
     background-color:#ADFAAF;
@@ -182,15 +197,25 @@ body {
         grid-column: 1/-1;
         grid-row: 1/2;
         flex-direction: row;
-        width: 100%;
         background-image: linear-gradient(to left, #527979, #ADFAAF);
+        border-radius: 100px 0 5px 100px;
+        margin-left: 5px;
+    }
+    .logo {
+        height: auto;
+        width: 12%;
+        text-align: left;
+        padding-left: 10px;
+        margin: 0;
     }
     .logo__img {
-        padding: 20px;
+        width: 100%;
+        align-self: center;
     }
     .logo__text {
-        flex-direction: row;
-        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
         padding-left: 10px;
     }
     .left-sidebar {
@@ -224,7 +249,7 @@ body {
         padding: 0;
     }
     .main-content__highlited--text {
-        padding-left: 20px;
+        padding: 25px;
         justify-content: space-around;
         margin: auto 0;
     }
@@ -255,15 +280,24 @@ body {
         margin: 20px 0;
     }
     .main-content__normal {
-        padding: 20px;
-        margin: auto;
-        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .main-content__normal--paragraph {
+        margin: 0;
     }
     .main-content__normal--picture {
-        display: block;
-        max-width: 100%;
-        width: auto;
+        display: flex;
+        width: 50%;
         border-radius: 5px;
+    }
+    .main-content__normal--inside {
+        display: flex;
+    }
+    .normal__inside--left {
+        display: flex;
+        flex-direction: column;
     }
     .main-content__normal--certificate {
         display: flex;
@@ -272,12 +306,8 @@ body {
         border-radius: 5px;
         padding: 20px;
     }
-    .link-text {
-        background-color: #ADFAAF;
-        padding: 0 10px;
-        border-radius: 15px;
-    }
-    .link-text:hover {
+    .button
+    .button__link:hover {
         background-color: #527979;
         padding: 0 10px;
         border-radius: 15px;
@@ -289,9 +319,13 @@ body {
         border-radius: 0;
         padding: 10px;
         background-color: #E6FDE7;
+        height: 100%;
+        width: 100%;
     }
     .site-footer {
-        background-image: linear-gradient(to left, #527979, #ADFAAF);
+        background-image: linear-gradient(to left,#ADFAAF, #527979 );
+        border-radius: 5px 100px 100px 0;
+        margin-right: 5px;
     }
     .site-footer__content {
         flex-direction: row;
@@ -302,5 +336,6 @@ body {
     }
     .site-footer__content--facebook {
         padding: 10px;
+        vertical-align: middle;
     }
 }
