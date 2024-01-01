@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pedikúra Lenka Ježková</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <header class="site-header">
-        <div class="logo">
-                <img src="/images/logo.jpg" class="logo__img" alt="logo">
-        </div>
-    
-    <div class="logo__text">
-        <h1 class="logo__text--title">Lenka Ježková</h1>
-        <h2 class="logo__text--subtitle">mobilní pedikúra</h2>
-    </div>
-    </header>
+---
+layout: sablona.njk
+title: Můj titulek stránky
+---
     <main class="main-content">
         <div class="main-content__highlited">
             <img src="/images/pristrojova.jpg" alt="pedikúra" class="main-content__highlighted--picture">
@@ -67,51 +49,4 @@
         <img src="/images/diabetes.jpg" alt="diabetes" class="main-content__normal--picture">
         </div>
     </main>
-    <section class="left-sidebar">
-        <div class="dropdown">
-            <input type="checkbox" class="dropdown__checkbox" id="dropdown__menu">
-            <label for="dropdown__menu">Menu</label>
-            <ul class="nav">
-                <li class="nav__item"><a href="/o-mne.html/" class="nav__item--link">O mně</a></li>
-                <li class="nav__item"><a href="/cenik.html/" class="nav__item--link">Ceník</a></li>
-                <li class="nav__item"><a href="/novinky.html/" class="nav__item--link">Novinky</a></li>
-                <li class="nav__item"><a href="/kontakt.html/" class="nav__item--link">Kontakt</a></li>
-            </ul>
-        </div>
-    </section>
-    <aside class="right-sidebar">
-        <div class="highlight">
-            <h2 class="highlight__text">Objednejte se</h2>
-        </div>
-        <div class="contact-info">
-            <p>jezkovalenka0@gmail.com</p>
-            <p>604 188 176</p>
-            <p>Po - Pá: dle objednání</p>
-            <p>
-                Hranice, Přerov, Potštát,
-                Odry, Fulnek, Vítkov a okolí
-            </p>
-            <p>Přijímám platby kartou.
-            </p>
-            <img src="/images/karty.jpg" alt="platební karty" class="contact-info__cards">
-        </div>
-    </aside>
-    <footer class="site-footer">
-        <div class="site-footer__content">
-            <p class="site-footer__content--inside">
-            Lenka Ježková
-            </p>
-            <p class="site-footer__content--inside">
-            Partutovice 98
-            </p>
-            <p class="site-footer__content--inside">
-            75301 Hranice
-            </p>
-            <p class="site-footer__content--inside">
-            IČO: 681803114
-            </p>
-        </div>
-        <a href="https://www.facebook.com/search/top?q=pedik%C3%BAra%20-%20lenka%20je%C5%BEkov%C3%A1"><img src="/images/facebook.png" alt="facebook" class="site-footer__content--facebook"></a>
-    </footer>
-</body>
-</html>
+    
