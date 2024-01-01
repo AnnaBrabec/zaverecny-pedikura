@@ -58,6 +58,7 @@ body {
 }
 .main-content__flexbox {
     display: block;
+    flex-wrap: wrap;
 }
 .link-text {
     text-decoration: none;
@@ -74,6 +75,13 @@ body {
 }
 .main-content__highlighted--picture {
     display: none;
+}
+.main-content__highlighted--profile-picture {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    border-radius: 5px;
+
 }
 .main-content__normal--picture {
     display: none;
@@ -209,11 +217,11 @@ body {
         grid-column: 2/6;
         grid-row: 2/3;
         padding: 0;
-        background-color: white;
     }
     .main-content__highlited {
-        border-radius: 5px;
+        border-radius: 100px 20px 100px 20px;
         display: flex;
+        padding: 0;
     }
     .main-content__highlited--text {
         padding-left: 20px;
@@ -225,23 +233,44 @@ body {
     }
     .main-content__highlighted--picture {
         display: block;
-        max-width: 200px;
-        border-radius: 5px;
+        max-width: 25%;
+        height: auto;
+        border-radius: 100px 0px 0px 20px;
         
     }
-    .main-content__normal {
+    .main-content__highlighted--profile-picture {
         margin: 0;
-        margin: auto;
-        padding: 20px;
-    }
-    .main-content__normal--picture {
         display: block;
-        border-radius: 5px;
-        max-width: 250px;
+        max-width: 25%;
+        height: auto;
+        border-radius: 100px 0px 0px 20px;
     }
     .main-content__flexbox {
         display: flex;
-        background-color: #E6FDE7;
+        flex-wrap: nowrap;
+        background-color: white;
+    }
+    .main-content__flexbox--certificates {
+        display: flex;
+        margin: 20px 0;
+    }
+    .main-content__normal {
+        padding: 20px;
+        margin: auto;
+        margin: 20px 0;
+    }
+    .main-content__normal--picture {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        border-radius: 5px;
+    }
+    .main-content__normal--certificate {
+        display: flex;
+        max-width: 25%;
+        width: auto;
+        border-radius: 5px;
+        padding: 20px;
     }
     .link-text {
         background-color: #ADFAAF;
