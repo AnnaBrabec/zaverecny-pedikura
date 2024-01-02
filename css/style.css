@@ -65,13 +65,7 @@ body {
     display: block;
     flex-wrap: wrap;
 }
-.main-content__flexbox--certificates {
-    display: flex;
-    margin-top: 10px;
-}
-.main-content__normal--certificate {
-    width: 25%;
-}
+
 .button__link {
     text-decoration: none;
     color: black;
@@ -100,6 +94,14 @@ body {
 }
 .main-content__normal--picture {
     display: none;
+}
+.main-content__certificates {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-content__certificates--item {
+    width: 50%;
+    padding: 10px;
 }
 .left-sidebar {
     grid-column: 2/-2;
