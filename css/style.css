@@ -3,9 +3,8 @@ html { box-sizing: border-box; }
 
 /*BARVY:
 #ADFAAF: zelené pozadí článků
-#527979: button
 #E6FDE7: body
-#527979: šedá gradient, hover
+#527979: šedá gradient, hover, button
 */
 body {
     display: grid;
@@ -65,13 +64,12 @@ body {
     display: block;
     flex-wrap: wrap;
 }
-
 .button {
     text-decoration: none;
-    color: black;
+    color: #E6FDE7;
     text-transform: uppercase;
     font-weight: 500;
-    background-color: #ADFAAF;
+    background-color: #527979;
     padding: 0 10px;
     border-radius: 15px;
 }
@@ -119,6 +117,14 @@ body {
     padding: 10px 0;
     font-size: 1.3rem;
 }
+.news {
+    list-style-type: none;
+    padding: 10px 50px 10px 50px;
+}
+.news__item {
+    font-size: 1.5rem;
+}
+
 .left-sidebar {
     grid-column: 2/-2;
     grid-row: 4/5;
