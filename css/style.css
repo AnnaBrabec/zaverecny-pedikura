@@ -313,7 +313,8 @@ body {
     }
     .main-content__normal--picture {
         display: flex;
-        width: 50%;
+        max-width: 50%;
+        height: auto;
         border-radius: 5px;
     }
     .main-content__normal--inside {
