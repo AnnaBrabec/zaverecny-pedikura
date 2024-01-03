@@ -114,6 +114,11 @@ body {
 .price-list__item--price {
     text-align: center;
 }
+.main-content__normal--titles {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
 .left-sidebar {
     grid-column: 2/-2;
     grid-row: 4/5;
